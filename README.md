@@ -1,5 +1,6 @@
-# weather-forecast
+# Weather-forecast
 
+## Demo : `https://alex-weather-forecast.netlify.app/`
 ## What does the application contain:
 
 * `weather data.`
