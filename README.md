@@ -2,9 +2,9 @@
 
 ## What does the application contain:
 
-* `5 days forecast
-
 * `weather data.`
+
+* `5 days forecast.`
 
 * `button that changes the theme of the site.`
 
