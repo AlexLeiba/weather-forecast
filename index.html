@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vremea IT School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body body2">
+    <header class="bg-dark d-flex justify-content-center align-items-center">
+      <div class="container d-flex justify-content-center">
+        <div>
+          <img
+            class=""
+            src="https://play-lh.googleusercontent.com/PkNdm5zWBQoe7JVYWu_b3fyw8SxkeeF8EkZiGKc71LOAj1-BNaWREVkUf_Asqfq4_Co"
+            alt=""
+          />
+        </div>
+        <h1 class="text-white text-center">Vremea</h1>
+      </div>
+    </header>
+    <main>
+      <section class="choose-location py-5">
+        <div class="container">
+          <h2 class="title text-center mb-5">Alege-ți locația</h2>
+          <p class="paragraf text-center fs-6">
+            Te pregătești să mergi la o plimbare și vrei să vezi cu ce să te
+            îmbraci? Îți venim în ajutor! Alege mai jos una dintre locații și
+            apoi scrollează pentru a vedea vremea din orașul tău și prognoza pe
+            5 zile. Nu uita să încerci tema neagră a site-ului.
+          </p>
+          <p class="paragraf2 text-center fs-5">
+            Orașul tău curent este:
+            <strong class="currentCity">București.</strong>
+          </p>
+
+          <div class="dropdown d-flex justify-content-center">
+            <button type="button" class="button-theme btn">Theme</button>
+            <button
+              class="button-city btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Alege un alt oraș
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <button class="dropdown-item bucuresti">București</button>
+              </li>
+              <li>
+                <button class="dropdown-item timisoara">Timișoara</button>
+              </li>
+              <li><button class="dropdown-item oradea">Oradea</button></li>
+              <li><button class="dropdown-item cluj">Cluj-Napoca</button></li>
+              <li><button class="dropdown-item brasov">Brașov</button></li>
+              <li><button class="dropdown-item sibiu">Sibiu</button></li>
+              <li>
+                <button class="dropdown-item constanta">Constanța</button>
+              </li>
+              <li><button class="dropdown-item baiaMare">Baia Mare</button></li>
+              <li><button class="dropdown-item iasi">Iași</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sectiunea vremea curenta -->
+      <section class="py-5 bg-dark">
+        <div class="container">
+          <h2 class="text-primary text-center mb-5">Vremea curentă</h2>
+
+          <div class="current-weather"></div>
+        </div>
+      </section>
+
+      <!-- sectiunea forecast 5 zile -->
+      <section class="py-5">
+        <div class="Container">
+          <h2 class="titleh2 text-center mb-5">Prognoză pe 5 zile</h2>
+          <div class="weather-forecast"></div>
+        </div>
+      </section>
+
+      <div
+        class="buttonScroll d-flex justify-content-center align-items-center"
+      >
+        <span class="material-icons"> arrow_upward </span>
+      </div>
+    </main>
+    <footer class="bg-dark">
+      <div class="container">
+        <p class="text-light text-center m-0 py-3">
+          Alexandru Lapteacru © 2021. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./api/endpoints.js"></script>
+
+    <script src="./sections/CurrentWeather.js"></script>
+
+    <script src="./utils/date.js"></script>
+
+    <script src="./utils/weather.js"></script>
+
+    <script src="./sections/ChangeLocation.js"></script>
+
+    <script src="./sections/WeatherForecast.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

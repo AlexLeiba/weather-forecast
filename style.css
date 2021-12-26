@@ -1,0 +1,152 @@
+/* Customizam Bootstrap */
+.btn-secondary,
+.btn-secondary:focus {
+  background-color: #101d42;
+  border-color: #370ebe;
+}
+.btn-secondary:hover {
+  background-color: black;
+}
+
+.text-primary {
+  color: #d1eafd !important;
+}
+
+.text-secondary {
+  color: #ffffff !important;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+.bg-primary {
+  background-color: #d1eafd !important;
+}
+
+.bg-secondary {
+  background-color: #38acf0 !important;
+}
+
+.bg-dark {
+  background-color: #101d42 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.Container {
+  min-width: 350px;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
+
+/* Theme */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.body {
+  background-color: rgb(15, 11, 11);
+}
+
+.body2 {
+  background-color: rgb(176, 176, 179);
+}
+
+.paragraf,
+.paragraf2,
+.title,
+.currentCity,
+.titleh2 {
+  color: #000000;
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Header */
+header {
+  height: 15vh;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+/* Forecast img*/
+
+.weather-forecast img {
+  width: 75px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Mobile */
+
+@media (max-width: 770px) {
+  .real-feel {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .description {
+    display: none;
+  }
+  .weather-forecast {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .day-week {
+    text-align: center;
+  }
+}
+
+/* Theme */
+.button-theme {
+  width: 75px;
+  padding: 6px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  right: 5px;
+  background-color: rgb(19, 18, 18);
+  color: rgb(255, 255, 255);
+}
+
+/* Button scroll */
+.buttonScroll {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: #38acf0;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  visibility: hidden;
+}
+.buttonScroll .material-icons {
+  color: white;
+}
+.buttonScroll:hover {
+  background-color: #101d42;
+}
